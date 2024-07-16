@@ -34,3 +34,40 @@ Tener en cuenta que el codigo que hagamos en codespaces no se guardará automati
 3. Despues agregar un mensage de commit que describa los cambios que hemos realizado y agregamos estos cambios con el boton `commit`
 4. final mente sincronizamos los cambios, haciendo click en el boton nuevamente que ahora dice `Sync Changes`, esto nos muestra un modal con un mensaje advirtiendonos que la accion hara cambios en nuestro repositorio. Hacemos click en `OK`.
 5. Para previsualizar la pagina debemos instalar la extensionn `Live server` en el codespace. Lo podemos hacer igual que en VSC en la barra lateral vamos a `extensiones`y buscamos la extension.
+
+## Titulos
+En HTML se pueden crear titulos que van desde el h1 hasta el h6.
+<h1>h1 - Titulo de primer nivel</h1>
+<h2>h2 - Titulo de segundo nivel</h2>
+<h3>h3 - Titulo de tercero nivel</h3>
+<h4>h4 - Titulo de cuarto nivel</h4>
+<h5>h5 - Titulo de quinto nivel</h5>
+<h6>h6 - Titulo de sexto nivel</h6>
+
+## Párrafos
+Es un bloque de texto y entre párrafo y párrafo el navegador se encargará de dejar un espacio vertical.
+
+Nota: VSC nos permite agregar texto generico de relleno, para hacer esto no situamos donde queremos agregar el texto y excribimos lorem*1.
++ El numero que va despues del asterisco es equivalente alnumero de lineas que queremos insertar
+
+Un aspecto interesante de los parrafos es que los espacios adicionales, las tabulaciones y los saltos de linea se eliminan en el documento final.
+
+<p>Párrafo1 - "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+<p>Párrafo2 - "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+## Listas
+HTML prove tres tipos diferentes de listas:
+* Lista Numerada: Donde cada elemento de la lista esta precedido por un número
+    * Para hacer una lista numerada utilizamos la etiqueta ol(Order List) y cada uno de los elementos de la lista se incluyen dentro de una etiqueta li(List Item).
+    ```html
+    <ol>
+        <li>Enter Sandman<li>
+        <li>Master of Puppets</li>
+    </ol>
+
+    ```
+   1. Enter Sandman
+   2. Master of Puppets
+   * Se puede modificar la lista para que el orden de los numeros sea descendente, para hacer esto hay que colocar dentro de la etiqueta ol el atributo ***reversed*** asignandole el valor true.
+* Lista de Viñetas: Donde cada elemnto esta precedido por una viñeta que usualmente es un circulo
+* Lisa de Definiciones: Donde cada elemento de la lista es un termino junto con su definición.
