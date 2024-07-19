@@ -59,15 +59,52 @@ Un aspecto interesante de los parrafos es que los espacios adicionales, las tabu
 HTML prove tres tipos diferentes de listas:
 * Lista Numerada: Donde cada elemento de la lista esta precedido por un número
     * Para hacer una lista numerada utilizamos la etiqueta ol(Order List) y cada uno de los elementos de la lista se incluyen dentro de una etiqueta li(List Item).
-    ```html
-    <ol>
-        <li>Enter Sandman<li>
-        <li>Master of Puppets</li>
-    </ol>
+        ```html
+        <ol>
+            <li>Enter Sandman<li>
+            <li>Master of Puppets</li>
+        </ol>
 
-    ```
-   1. Enter Sandman
-   2. Master of Puppets
+        //View in the Browser
+        1. Enter Sandman
+        2. Master of Puppets
+        ```
+ 
    * Se puede modificar la lista para que el orden de los numeros sea descendente, para hacer esto hay que colocar dentro de la etiqueta ol el atributo ***reversed*** asignandole el valor true.
-* Lista de Viñetas: Donde cada elemnto esta precedido por una viñeta que usualmente es un circulo
-* Lisa de Definiciones: Donde cada elemento de la lista es un termino junto con su definición.
+        ```html
+        <ol reversed="true">
+            <li>Enter Sandman</li>
+            <li>Master of Puppets</li>
+            <li>One</li>
+        </ol>
+
+        //View in the Browser
+        2. Master of Puppets
+        1. Enter Sandman
+        ```
+   
+* Lista de Viñetas: Donde cada elemento esta precedido por una viñeta que usualmente es un circulo
+    + Esta lista se crea con la etiqueta ul(Unorder list) y cada uno de los elementos de la lista se incluyen dentro de una etiqueta li(List Item).
+        ```html
+        <ul>
+            <li>Enter Sandman<li>
+            <li>Master of Puppets</li>
+        </ul>
+
+        //View in the Browser
+        * Enter Sandman
+        * Master of Puppets
+        ```
+    
+* Lista de Definiciones: Donde cada elemento de la lista es un termino junto con su definición.
+    + Para crear una lista de definiciones usamos la etiqueta dl(definition List) y cada termino para definir se incluye dentro de una etiqueta dt(definition term) y la definicion del termino se incluye dentro de una etiqueta dd(definition description).
+        ```html
+        <dl>
+            <dt>Enter Sandman<dt>
+            <dt>Master of Puppets</dt>
+        </dl>
+
+        //View in the Browser
+        * Enter Sandman
+        * Master of Puppets
+        ```
