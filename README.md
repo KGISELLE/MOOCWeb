@@ -108,3 +108,22 @@ HTML prove tres tipos diferentes de listas:
         * Enter Sandman
         * Master of Puppets
         ```
+
+
+## Tablas
+    ```html
+    <table>
+        <thead>
+            <tr>Filas
+                <th>celdas del encabezado</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>Filas
+                <td>celdas en el cuerspo de la tabla</td>
+            </tr>
+        </tbody>
+
+    </table>
+    ```
