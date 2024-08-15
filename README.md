@@ -127,3 +127,41 @@ HTML prove tres tipos diferentes de listas:
 
     </table>
     ```
+## Formularios
+Herramientas que nos sirven para captura informacion del usuario.
+
+Los formularios contienen:
+* label(Etiqueta): Para describir cada uno de los controles de interfaz de usuario
+* input(Cuadro de texto): Para permitir la entrada de datos, y pueden ser de los siguientes tipos:
+    * type = "text" (Para texto libre)
+    * type = "email" (Para correos- este valida que en este cuador exista una cadena que incluya el simbolo de @)
+* textarea(Area de texto) = Tambien sirve para introducir texto en varias lineas
+* Boton para borrar los datos de un formulario
+    * Se puede usar un control `input` con el atributo `type="reset"`
+* Para enviar los datos del formulario tambien se usa un control `input` con el atributo `type="submit"`.
+
+Recordar que los fromularios inician con la etiqueta <form>
+
+```html
+    <form>
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" />
+        </div>
+        <div>
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" />
+        </div>
+        <div>
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje"></textarea>
+        </div>
+        <div>
+            <input type="reset" value="Borrar datos"/>
+            <input type="submit" value="Enviar"/>
+        </div>
+    </form>
+```
+<u>NOTAS</u>
+* Al label se le agrega el atributo for y se le el asigna "nombre" (este debera coincidir con el id del input asociado), esto para que cuando el usuario haga click sobre la etiqueta el foco quede en el control con el id asignado.
+* La etiqueta input no tiene cierre es selfclose.
