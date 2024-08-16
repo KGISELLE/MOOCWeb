@@ -165,3 +165,36 @@ Recordar que los fromularios inician con la etiqueta <form>
 <u>NOTAS</u>
 * Al label se le agrega el atributo for y se le el asigna "nombre" (este debera coincidir con el id del input asociado), esto para que cuando el usuario haga click sobre la etiqueta el foco quede en el control con el id asignado.
 * La etiqueta input no tiene cierre es selfclose.
+
+## Head
+Configuracion del encabezado de una pagina web.
+</br>
+El elemento `<head>` provee informacion en general es decir metadatos acerca del documento, incluyendo subtitulo y enlaces a scripts y hojas de estilo.
+</br>
+Dentro del `<head>` algunas de las etiquetas mas utilizadas son:
+* `<title>`: Establece el titulo de la pagina, es decir el titulo que aparece en la ventana del navegador
+* `<base>`: Esta define la url base para todas las url's relativas del documento
+* `<link>`: Establece una relacionentre el documento html y otros elementos externos, generalmente se usa para referenciar Hojas de Estilo
+* `<meta>`: Define otra info relevante que no se puede especificar con las etiquetas anteriores, por ejemplo, redireccion, codificacion de caracteres, metadata de la pagina, entre otros.
+    * Redireccion: Para indicarle al browser que sea direccionado al siguion indicado, 5 segundos despues de haberse cargado la pagina
+        ```html
+            <head>
+                <meta http-equiv="refresh"
+                    content="5;url=https://www.uniandes.edu.co">
+            </head>
+        ```
+    * Codificación de caracteres: Le indica al browser la codificacion requerida para que el texto se muestre correctamente, en el ejemplo se le indica que la codificaion es "UTF-8", e cual es el mas usado en las paginas en español para que las tildes se visualicen correctamente.
+        ```html
+            <head>
+                <meta charset="UTF-8">
+            </head>
+        ```
+    * Meta: Es la metadata que generalmente es usada por los buscadores
+        ```html
+            <head>
+                <meta name="author" content="Jose Bocanegra">
+                <meta name="keywords" content="html, css, bootstrap">
+                <meta name="description" content="Pagina web personal">
+
+            </head>
+        ```
